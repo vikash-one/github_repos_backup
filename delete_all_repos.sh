@@ -1,8 +1,8 @@
 #!/bin/bash
 
 # Replace with your GitHub username and personal access token
-GITHUB_USERNAME="your_username"
-GITHUB_TOKEN="your_personal_access_token"
+GITHUB_USERNAME="vikash-one"
+GITHUB_TOKEN="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"
 
 # Fetch all repositories
 repos=$(curl -s -H "Authorization: token $GITHUB_TOKEN" https://api.github.com/users/$GITHUB_USERNAME/repos?per_page=100 | jq -r '.[].name')
